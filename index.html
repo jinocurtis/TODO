@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo CRUD app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-200">
+    <section class="bg-white m-20 max-w-lg mx-auto p-5">
+        <header class="px-5 py-4 max-w-lg mx-auto">
+            <h1
+                class="font-bold text-3xl p-5 text-centerw-full bg-blue-500 text-white text-center font-medium font-medium">
+                DailyTask Update
+            </h1>
+        </header>
+
+        <main class="px-5 mt-10 max-w-lg mx-auto">
+            <form class="flex gap-2">
+                <input type="text" placeholder="What are you doing today?"
+                    class="p-2 rounded-lg border border-slate-100 w-full outline-none bg-transparent" id="todo-input" />
+                <button class="bg-blue-500 rounded-lg px-2.5 py-2 text-sm text-white w-[100px]" onclick="createTodo()"
+                    type="button">
+                    Add todo
+                </button>
+            </form>
+        </main>
+
+        <section class="mt-5" id="todo-list">
+            <!-- JavaScript will append todos here -->
+        </section>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
